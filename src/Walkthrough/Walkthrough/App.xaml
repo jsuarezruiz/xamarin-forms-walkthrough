@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Walkthrough.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <Color
+                x:Key="BikingHardColor">#98A5D2</Color>
+            <Color
+                x:Key="AcrobaticsColor">#40C2F3</Color>
+            <Color
+                x:Key="SoExcitedColor">#E3EAE2</Color>
+            <Color
+                x:Key="BikingCoolColor">#1DB890</Color>
+            
+            <Style
+                TargetType="Label"
+                x:Key="TutorialTitle">
+                <Setter
+                    Property="FontSize"
+                    Value="24" />
+                <Setter
+                    Property="HorizontalOptions"
+                    Value="CenterAndExpand" />
+                <Setter
+                    Property="TextColor"
+                    Value="White" />
+                <Setter
+                    Property="Margin"
+                    Value="0, 0, 0, 6" />
+            </Style>
+
+            <Style
+                TargetType="Label"
+                x:Key="TutorialInfo">
+                <Setter
+                    Property="FontSize"
+                    Value="16" />
+                <Setter
+                    Property="TextColor"
+                    Value="Black" />
+                <Setter
+                    Property="Margin"
+                    Value="48, 0" />
+                <Setter
+                    Property="HorizontalTextAlignment"
+                    Value="Center" />
+                <Setter
+                    Property="HorizontalOptions"
+                    Value="CenterAndExpand" />
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

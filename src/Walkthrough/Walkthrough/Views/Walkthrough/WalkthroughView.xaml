@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Walkthrough.Views.WalkthroughView"
+    xmlns:carousel="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style
+                TargetType="Label"
+                x:Key="SkipStyle">
+                <Setter
+                    Property="FontSize"
+                    Value="14" />
+                <Setter
+                    Property="TextColor"
+                    Value="White" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="*" />
+                <RowDefinition
+                    Height="Auto" />
+            </Grid.RowDefinitions>
+            <carousel:CarouselViewControl
+                x:Name="Carousel"
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                Orientation="Horizontal"
+                Position="0"
+                ShowIndicators="True"
+                CurrentPageIndicatorTintColor="LightGray"
+                IndicatorsTintColor="White"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                PositionSelected="OnCarouselPositionSelected" />
+            <Grid
+                Grid.Row="1"
+                Padding="12"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="EndAndExpand"
+                AutomationId="skip">
+                <Label
+                    Text="SKIP"
+                    Style="{StaticResource SkipStyle}" />
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
