@@ -2,12 +2,17 @@
 
 **WalkthroughApp** is a Xamarin.Forms application that makes use [CarouselView](https://openweathermap.org/api) and [Lottie](https://github.com/martijn00/LottieXamarin), to demonstrate the possibilities of creating a fluid and powerful **Walkthrough** without requiere Custom Renderers.
 
-<img src="images/walkthrough.gif" alt="Walkthrough" Width="350" />
+<img src="images/walkthrough.gif" alt="Walkthrough" Width="300" />
 
 ### Supported platforms:
 
 - Android
 - iOS
+
+This project uses some third-party assets with a license that requires attribution:
+
+- [Yue XI](https://www.lottiefiles.com/u/1724) resources from LottieFiles.
+
 
 ## Xamarin.Forms App 
 
