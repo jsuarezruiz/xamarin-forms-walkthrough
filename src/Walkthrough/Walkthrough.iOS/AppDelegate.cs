@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using CarouselView.FormsPlugin.iOS;
+using Foundation;
 using Lottie.Forms.iOS.Renderers;
 using UIKit;
 
@@ -20,7 +21,10 @@ namespace Walkthrough.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+            CarouselViewRenderer.Init();
 			AnimationViewRenderer.Init();
+
 			LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
